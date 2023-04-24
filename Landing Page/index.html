@@ -12,6 +12,8 @@
 
     <!-- JAVASCRIPT LINKS -->
     <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 <body>
     
@@ -25,13 +27,13 @@
             <form>
                 <ul style="list-style: none;">
                     <li>
-                        <input class="input-box"  type="text" lang="Nome" placeholder="Nome completo" required/>
+                        <input class="input-box" id="name-user" type="text" lang="Nome" placeholder="Nome completo" required/>
                     </li>
                     <li>
-                        <input class="input-box"  type="tel" maxlength="14" data-js="phoneNumber" lang="Whatsapp" placeholder="(DDD) 99999-9999" required/>
+                        <input class="input-box" id="telefone-user" type="tel" maxlength="14" data-js="phoneNumber" lang="Whatsapp" placeholder="(DDD) 99999-9999" required/>
                     </li>
                     <li>
-                        <select class="input-box" required>
+                        <select class="input-box" id="idioma-select" required>
                             <option class="lang-option-select">Idioma</option>
                             <option class="lang-option-select">Inglês</option>
                             <option class="lang-option-select">Espanhol</option>
@@ -41,7 +43,7 @@
             </form>
             <p id="text-according-user">Ao clicar em continuar você aceita receber contato pela unidade CNA Idiomas de Jaboticabal para fins de alertá-lo(a) quanto aulas e cursos disponíveis e de seu interesse.</p>
             <br/>
-            <input type="button" class="buttons-page" id="btn-box-cadastro" value="Continuar"/>
+            <input type="button" class="buttons-page" id="btn-box-cadastro" value="Continuar" onclick="myfunction()"/>
         </div>
     </section>
 
@@ -94,7 +96,7 @@
     </section>
 
     <section class="mini-banner" id="mini-cna-go">
-        <div style="width: 90%; display: flex; border: 3px solid #5BCBF5; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+        <div style="width: 90%; display: flex; border: 3px solid #5BCBF5; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom: none;">
             <div id="cnago-text-area">
                 <p class="title title-mini">CNA GO: do seu jeito, no seu tempo</p>
                 <p id="text-cnago-mini">O CNA Live Class é uma das melhores soluções de cursos de idiomas online existentes no mercado. É o curso ideal para quem busca um curso online, mas também valoriza estar com seus colegas de classe e seu professor durante o processo de aprendizagem. Você participa de aulas online e ao vivo e ainda pode interagir com os colegas da sua turma para realizar as atividades propostas e praticar a conversação em inglês ou espanhol. Os temas atuais abordados manterão você motivado durante todo o seu processo de aprendizagem. Tudo isso sem sair de casa ou trabalho, com toda comodidade. E depois, você ainda consolida o que aprende no CNA Net, um app com muitos recursos tecnológicos, jogos e interação. Gostou? Experimente já uma aula online e ao vivo grátis!</p>
@@ -200,13 +202,41 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
-    <header id="top-page">
-        <div id="area-logo-top">
-            <img src="./IMAGES/cna-removebg-preview.png"/>
+    <section class="bans-page-config" id="ban-eficiencia">
+        <p class="title">O CNA tem a eficiência comprovada</p>
+        <div class="efi-text-area-config">
+            <img src="./IMAGES/siele-img.png"/>
+            <p id="text-siele">Ao fim do curso de espanhol para adultos o aluno pode prestar o exame internacional SIELE, que atesta o conhecimento em língua espanhola, sem custo adicional. Esses exames também podem ser oferecidos para alunos de outros níveis, idiomas, colaboradores e também para o público em geral.</p>
         </div>
+        <div class="efi-text-area-config">
+            <img src="./IMAGES/linguaskill-img.png" style="height: 50px;"/>
+            <p id="text-linguaskill">O CNA também oferece para os seus alunos que concluíram o curso a oportunidade de prestar o exame Linguaskill sem custos adicionais. O Linguaskill é um exame da Cambridge, 100% online, rápido e prático, que permite ao candidato verificar as habilidades na língua inglesa de produção oral, escrita, leitura e compreensão auditiva. Após 72 horas da realização do exame, o candidato já recebe o relatório com a nota alcançada. Os resultados estão dentro do Quadro Europeu Comum de Referência para Línguas (CEFR). Ou seja, é um exame que está alinhado ao padrão internacional para a descrição das habilidades linguísticas do aluno. O Linguaskill também pode ser oferecido para alunos de outros níveis e público em geral.</p>
+        </div>
+    </section>
+
+    <section class="bans-page-config" id="ban-unidade-jabuka">
+        <p class="title">VENHA CONHECER NOSSA UNIDADE!</p> 
+        <div id="map-cna-jabuka">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.3120010912207!2d-48.32672987252988!3d-21.259113974780195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b96b7b37c68ba1%3A0x99e43aab0c273f62!2sCNA%20Escola%20de%20Idiomas%3A%20Curso%20de%20Espanhol%2C%20Curso%20de%20Ingl%C3%AAs%20-%20Jaboticabal%20SP!5e0!3m2!1spt-BR!2sbr!4v1682339739360!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" style="margin: auto 0 auto 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <a id="button-return-top" href="#banner-cadastro">
+        <box-icon id="question-mark" name='question-mark' color='#ffffff' size="5"></box-icon>
+    </a>
+
+    <header id="top-page">
+        <a href="#banner-cadastro">
+            <div id="area-logo-top">
+                <img src="./IMAGES/cna-removebg-preview.png"/>
+            </div>
+            <div id="top-text-area">
+                <div class="text-divider"></div>
+                <p class="title">Jaboticabal - SP</p>
+            </div>
+        </a>
     </header>
 </body>
 </html>
