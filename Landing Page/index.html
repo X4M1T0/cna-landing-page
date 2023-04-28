@@ -1,242 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNA Idomas</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/11/Logo-CNA-2018.png"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNA Idomas</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/11/Logo-CNA-2018.png"/>
 
-    <!-- STYLE LINKS -->
-    <link rel="stylesheet" href="./CSS/style.css"/>
+        <!-- STYLE LINKS -->
+        <link rel="stylesheet" href="./CSS/style.css"/>
+        <link rel="stylesheet" href="./CSS/mobile.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <!-- JAVASCRIPT LINKS -->
-    <script src="./JS/main.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-</head>
-<body>
-    
-
-    <section class="bans-page-config" id="banner-cadastro">
-        <div id="box-cadastro">
-            <div id="title-cadastro"> 
-                <p class="title" style="font-size: 22pt; color: #40B6A6;">CADASTRE-SE E GANHE</p>
-                <p class="title" style="font-size: 12pt; margin-top: 0px;">Uma aula experimental totalmente grátis!</p>
-            </div>
-            <form>
-                <ul style="list-style: none;">
-                    <li>
-                        <input class="input-box" id="name-user" type="text" lang="Nome" placeholder="Nome completo" required/>
-                    </li>
-                    <li>
-                        <input class="input-box" id="telefone-user" type="tel" maxlength="14" data-js="phoneNumber" lang="Whatsapp" placeholder="(DDD) 99999-9999" required/>
-                    </li>
-                    <li>
-                        <select class="input-box" id="idioma-select" required>
-                            <option class="lang-option-select">Idioma</option>
-                            <option class="lang-option-select">Inglês</option>
-                            <option class="lang-option-select">Espanhol</option>
-                        </select>
-                    </li>
-                </ul>
-            </form>
-            <p id="text-according-user">Ao clicar em continuar você aceita receber contato pela unidade CNA Idiomas de Jaboticabal para fins de alertá-lo(a) quanto aulas e cursos disponíveis e de seu interesse.</p>
-            <br/>
-            <input type="button" class="buttons-page" id="btn-box-cadastro" value="Continuar" onclick="myfunction()"/>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-video-apresentacao">
-        <div id="video-config">
-            <p class="title" id="title-apresentacao">Com o CNA, o futuro vai no seu flow</p>
-            <iframe width="60%" height="400" src="https://www.youtube.com/embed/e3sD24H2hAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-presential">
-
-        <img src="./IMAGES/promotion-presencial-bg.png" id="image-ban-presential"/>
-        <div class="text-bans-config" id="presential-text"> 
-            <p style="color: #e327fc; font-size: 10pt;">PRESENCIAL</p>
-
-            <h3 class="title" style="text-decoration-style: double; font-size: 22pt; width: 70%;">Na escola ou online, o CNA tem o formato de curso ideal para você</h3>
-            
-            
-            <p style="font-size: 10pt; max-width: 80%;">O CNA tem um jeito diferente de ensinar o idioma para alunos de todas as idades. Trabalhamos a comunicação oral e escrita em atividades com temas atuais que mantêm o estudante motivado durante o processo de aprendizagem. É com interação que o aluno aprende o idioma, e não repetindo e memorizando frases. Assim o curso torna-se mais dinâmico, divertido e eficiente.
-            <br/><br/>
-            Também desenvolvemos diversos recursos tecnológicos: unimos tecnologia e muita interação para que o aluno tenha ainda mais vontade de aprender. O CNA tem o curso que é do seu jeito e você decide o que faz mais sentido para você.​ É por isso que: com o CNA, o futuro vai no seu flow. </p>
-
-            <br/><br/><br/>
-            
-            <a href="#banner-cadastro" class="buttons-page" id="btn-presential" >SAIBA MAIS</a>
-        </div>
-        
-    </section>
+        <!-- JAVASCRIPT LINKS -->
+        <script src="./JS/main.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </head>
 
 
-    <section class="bans-page-config" id="ban-online" style="height: 85vh;">
-        <div id="online-banner-text">
-            <p class="title" id="online-ban-title">ONLINE</p>
-            <p id="text-online-ban">O CNA sempre está ao seu lado durante a jornada de aprendizagem de um novo idioma. Com os formatos de cursos online do CNA, o aluno aprende de uma forma leve por meio de atividades que simulam situações do dia a dia. Desde a primeira aula, você já se comunica na língua que está aprendendo.</p>
-            <br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-online" >SAIBA MAIS</a>
-        </div>
-        <img id="ban-online-image" src="./IMAGES/promotion-online-img.png"/>
-    </section>
-
-
-    <section class="mini-banner-config" id="mini-live-class">
-        <iframe width="390" height="230" src="https://www.youtube.com/embed/4CQXNJZFaJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="live-text-area">
-            <p class="title title-mini">CNA Live Class: aulas online e ao vivo.</p>
-            <p id="text-live-class-mini">O CNA Live Class é uma das melhores soluções de cursos de idiomas online existentes no mercado. É o curso ideal para quem busca um curso online, mas também valoriza estar com seus colegas de classe e seu professor durante o processo de aprendizagem. Você participa de aulas online e ao vivo e ainda pode interagir com os colegas da sua turma para realizar as atividades propostas e praticar a conversação em inglês ou espanhol. Os temas atuais abordados manterão você motivado durante todo o seu processo de aprendizagem. Tudo isso sem sair de casa ou trabalho, com toda comodidade. E depois, você ainda consolida o que aprende no CNA Net, um app com muitos recursos tecnológicos, jogos e interação. Gostou? Experimente já uma aula online e ao vivo grátis!</p>
-        </div>
-        
-    </section>
-
-    <section class="mini-banner" id="mini-cna-go">
-        <div style="width: 90%; display: flex; border: 3px solid #5BCBF5; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom: none;">
-            <div id="cnago-text-area">
-                <p class="title title-mini">CNA GO: do seu jeito, no seu tempo</p>
-                <p id="text-cnago-mini">O CNA Live Class é uma das melhores soluções de cursos de idiomas online existentes no mercado. É o curso ideal para quem busca um curso online, mas também valoriza estar com seus colegas de classe e seu professor durante o processo de aprendizagem. Você participa de aulas online e ao vivo e ainda pode interagir com os colegas da sua turma para realizar as atividades propostas e praticar a conversação em inglês ou espanhol. Os temas atuais abordados manterão você motivado durante todo o seu processo de aprendizagem. Tudo isso sem sair de casa ou trabalho, com toda comodidade. E depois, você ainda consolida o que aprende no CNA Net, um app com muitos recursos tecnológicos, jogos e interação. Gostou? Experimente já uma aula online e ao vivo grátis!</p>
-            </div>
-            <img id="cnago-img" src="./IMAGES/promotion-go-img.png"/>
-        </div>
-    </section>
-
-
-    <section class="bans-page-config" id="ban-idade-cna">
-        <img id="cna-adults-img" src="./IMAGES/cna-adults.png"/>
-        <div id="text-area-idade-ban">
-            <p class="title" id="title-idade-ban"> <b>Não importa a idade. Com o jeito CNA, todo mundo aprende.</b></p>
-            <p class="title-mini" style="font-size: 14pt;"> <b>CNA para jovens adultos</b></p>
-            <p id="text-cna-adults">Neste mundo de transformações constantes, o CNA sabe o quanto é importante ter um curso de inglês que respeita o seu ritmo, tempo e necessidade. Os cursos de inglês para adultos do CNA trazem metodologia moderna e dinâmica, além de materiais com temas atualizados para manter o aluno motivado dentro e fora da sala de aula. Você conta com uma série de recursos para consolidar o aprendizado, como o portal do aluno, professores online para tirar dúvidas e praticar a conversação, atividades em parceria com instituições internacionais e muito mais.
-            
-            <br/><br/>
-            O jeito CNA de ensinar dá resultados. A eficiência é comprovada com os exames internacionais da Cambridge Assessment English, departamento da Universidade de Cambridge, na Inglaterra, e do SIELE para o espanhol. Não perca tempo e venha para o CNA. Com o CNA, o futuro vai no seu flow.</p>
-            <br/><br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-online" >SAIBA MAIS</a>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-cna-professional">
-        <img id="cna-professional-img" src="./IMAGES/section-cna-pro-img.png"/>
-        <div id="cnapro-text">
-            <p style="color: yellow; font-size: 12pt;">CNA PRO</p>
-
-            <p class="title" style="text-decoration-style: double; font-size: 30pt;">Professional Real-Life
-            Opportunities</p>
-            
-            <p style="font-size: 12pt; width: 80%; color: #fff;">O mais novo curso do CNA tem esse nome, pois prepara você para colocar o inglês em prática tanto na vida pessoal quanto na profissional. Com uma abordagem inovadora, inspirada em cursos de pós-graduação, tem o foco na aplicação do conteúdo e não apenas na parte teórica. Foi desenvolvido com base nas necessidades da vida adulta e com o objetivo de preparar você para aplicar o aprendizado em situações reais do seu dia.</p>
-            <br/><br/><br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-cnapro">SAIBA MAIS</a>
-        </div>
-    </section>
-
-    <section class="mini-banner-config" id="mini-teens-on">
-        <img src="./IMAGES/cna-teens.png" id="mini-teens-img"/>
-        <div id="teens-text-area">
-            <p class="title-mini" style="font-size: 14pt;"> <b>CNA para pré-adolescentes</b></p>
-            <p id="text-cna-teens">O inglês já é parte da sua vida: nas músicas que você ouve, nas viagens que você quer fazer, nos sites e games que você curte. Agora, imagina aprender um novo idioma em uma escola que respeita o seu ritmo e o seu jeito de aprender. Aqui no CNA é assim. A gente vai no seu flow através do Portal do Aluno CNA e dos assuntos mais legais do momento, como games, apps e muito mais. E o mais irado: você aprende de verdade e do seu jeito. No curso de inglês para pré-adolescentes do CNA, você vai aprender com muita tecnologia, dentro e fora da sala de aula. Ah, nós temos um segredinho que queremos compartilhar com você: os nossos professores são um show à parte! Aqui é aquele professor tipo brother, sabe? Comprometido com você e com os seus objetivos no aprendizado do novo idioma.</p>
-            <br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-online" >SAIBA MAIS</a>
-        </div>
-    </section>
-
-    <section class="mini-banner-config" id="mini-kids">
-        <img src="./IMAGES/cna-kids.png" id="mini-teens-img"/>
-        <div id="teens-text-area">
-            <p class="title-mini"><b>CNA para crianças</b></p>
-            <p id="text-cna-teens">Imagina seu filho aprendendo com salas tematizadas e uma linha de materiais didáticos exclusiva com personagens Disney? No CNA aprender é mágico! O CNA é a única escola de idiomas da América Latina a ter essa parceria com a Disney. Esse diferencial motiva as crianças e faz com que elas aprendam de forma natural, lúdica e divertida.
-            <br/><br/>
-            Os cursos infantis foram desenvolvidos para ensinar com diversão e eficiência, explorando as principais habilidades das crianças com atividades especialmente criadas para cada faixa etária. Nossos professores são especialmente treinados para instruir as crianças a partir dos 3 anos. Com o CNA, o futuro vai no flow do seu filho.</p>
-            <br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-online" >SAIBA MAIS</a>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-cna-labs">
-        <img id="cna-labs-img" src="./IMAGES/section-cna-labs-bg.png"/>
-        <div id="labs-text-area">
-            <p style="color: #5BCBF5; font-size: 12pt;">CNA LABS</p>
-
-            <p class="title" style="text-decoration-style: double; font-size: 35pt; color: #fff;">Todo gênio já foi um
-            minigênio um dia</p>
-            
-            <p style="font-size: 12pt; color: #fff;">O CNA Labs é uma experiência extracurricular que desenvolve competências socioemocionais e linguísticas dos alunos por meio de projetos e da colaboração entre crianças de diferentes idades. É como um laboratório da vida real!
-            <br/><br/>
-            No CNA LABS, as crianças colocam a mão na massa e criam soluções para problemas reais. Elas aprendem inglês com outras disciplinas, como ciências, tecnologia, artes e matemática, além de exercitar seu lado criativo enquanto desenvolvem habilidades fundamentais para o seu futuro.
-            <br/><br/>
-            <b>Seu filho vai brincar, interagir, criar e descobrir novos mundos enquanto desenvolve habilidades fundamentais para o seu futuro.</b></p>
-            <br/><br/><br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-labs">SAIBA MAIS</a>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-unicna">
-        <div id="unicna-config">
-            <img id="unicna-img" src="./IMAGES/cna-universo.png" style="margin-bottom: 40px;"/>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/IwY2FAcneCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div id="unicna-text-area">
-            <p style="color: #EE7BAE; font-size: 12pt;">CNA UNIVERSO</p>
-
-            <p class="title" style="text-decoration-style: double; font-size: 35pt; color: black;">Com o CNA, o futuro vai no seu flow</p>
-            
-            <p style="font-size: 12pt; color: black; width: 70%;">O CNA tem um universo de possibilidades para você aprender inglês e espanhol. Aula presencial, online ao vivo e híbrida. Afinal, a gente não está junto só na escola, mas fora dela, como parte do seu dia a dia.
-            <br/><br/>
-            Tem cursos inovadores para crianças e adultos, materiais atualizados, Portal do Aluno e aplicativo com atividades extras, caderno de exercícios digital, blog, podcast, e exames internacionais. É um verdadeiro universo de ferramentas, cursos e formatos diferentes de aprender. Para todas as idades, todos os estilos, para todo mundo. Você decide o que faz mais sentido para você e é por isso que: com o CNA, o futuro vai no seu flow.</p>
-            <br/><br/>
-            <a href="#banner-cadastro" class="buttons-page" id="btn-online" >SAIBA MAIS</a>
-            <div id="bottom-sec-text-area">
-                <p style="color: #EE7BAE; font-size: 12pt;">CNA UNIVERSO</p>
-    
-                <p class="title" style="text-decoration-style: double; font-size: 35pt; color: black;">Com CNA é fácil e prático aprender um novo idioma</p>
-
-                <p style="font-size: 20pt;">Formatos de curso</p>
-
-                <div id="image-format-tips">
-                    <img src="./IMAGES/format-tips-cna.png" class="img-format-tips-config"/>
-                    <img src="./IMAGES/format-sistems-cna.png" class="img-format-tips-config"/>
+    <body>
+        <div class="banner-config section-banner-cadastro-cna d-flex align-items-center justify-content-around" id="banner-cadastro">
+            <div class="container">
+                <div class="control-itens">
+                    <img class="img-banner-cadastro" src="./IMAGES/“comocnaofuturovainoseuflow”eaassinaturadanovacampanhadarededeidiomaspara2023.jpg"/>
+                    <div class="form-cadastro align-self-center">
+                        <p class="title text-center">CADASTRE-SE E GANHE</p>
+                        <p class="subtitle container text-center">Uma aula experimental totalmente grátis!</p>
+                        <form>
+                            <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome Completo">
+                            </div>
+                            <div class="mb-3">
+                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="(DDD) 99999-9999">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control idiomas-curso">
+                                    <option>Idioma</option>
+                                    <option>Inglês</option>
+                                    <option>Espanhol</option>
+                                </select>
+                            </div>
+                            <p class="text-acording-user">Ao clicar em continuar você aceita receber contato pela unidade CNA Idiomas de Jaboticabal para fins de alertá-lo(a) quanto aulas e cursos disponíveis e de seu interesse.</p>
+                            <div class="col align-self-center">
+                                <button type="button" class="btn btn-primary btn-form-cadastro d-grid gap-2 col-6 mx-auto">Continuar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="bans-page-config" id="ban-eficiencia">
-        <p class="title">O CNA tem a eficiência comprovada</p>
-        <div class="efi-text-area-config">
-            <img src="./IMAGES/siele-img.png"/>
-            <p id="text-siele">Ao fim do curso de espanhol para adultos o aluno pode prestar o exame internacional SIELE, que atesta o conhecimento em língua espanhola, sem custo adicional. Esses exames também podem ser oferecidos para alunos de outros níveis, idiomas, colaboradores e também para o público em geral.</p>
-        </div>
-        <div class="efi-text-area-config">
-            <img src="./IMAGES/linguaskill-img.png" style="height: 50px;"/>
-            <p id="text-linguaskill">O CNA também oferece para os seus alunos que concluíram o curso a oportunidade de prestar o exame Linguaskill sem custos adicionais. O Linguaskill é um exame da Cambridge, 100% online, rápido e prático, que permite ao candidato verificar as habilidades na língua inglesa de produção oral, escrita, leitura e compreensão auditiva. Após 72 horas da realização do exame, o candidato já recebe o relatório com a nota alcançada. Os resultados estão dentro do Quadro Europeu Comum de Referência para Línguas (CEFR). Ou seja, é um exame que está alinhado ao padrão internacional para a descrição das habilidades linguísticas do aluno. O Linguaskill também pode ser oferecido para alunos de outros níveis e público em geral.</p>
-        </div>
-    </section>
-
-    <section class="bans-page-config" id="ban-unidade-jabuka">
-        <p class="title">VENHA CONHECER NOSSA UNIDADE!</p> 
-        <div id="map-cna-jabuka">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.3120010912207!2d-48.32672987252988!3d-21.259113974780195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b96b7b37c68ba1%3A0x99e43aab0c273f62!2sCNA%20Escola%20de%20Idiomas%3A%20Curso%20de%20Espanhol%2C%20Curso%20de%20Ingl%C3%AAs%20-%20Jaboticabal%20SP!5e0!3m2!1spt-BR!2sbr!4v1682339739360!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" style="margin: auto 0 auto 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <a id="button-return-top" href="#banner-cadastro">
-        <box-icon id="question-mark" name='question-mark' color='#ffffff' size="5"></box-icon>
-    </a>
-
-    <header id="top-page">
-        <a href="#banner-cadastro">
-            <div id="area-logo-top">
-                <img src="./IMAGES/cna-removebg-preview.png"/>
+        <div class="banner-config section-video-apresentacao d-flex align-items-center">
+            <div class="container">
+                <div class="row align-self-center">
+                    <p class="title text-center">Com o CNA, o futuro vai no seu flow</p>
+                    <div class="d-flex justify-content-center">
+                        <iframe class="config-video-apresentacao" src="https://www.youtube.com/embed/e3sD24H2hAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div id="top-text-area">
-                <div class="text-divider"></div>
-                <p class="title">Jaboticabal - SP</p>
+        </div>
+
+        <div class="banner-config section-cna-presencial align-items-end ">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="area-img">
+                        <img src="./IMAGES/promotion-presencial-bg.png" class="img-banner-presencial"/>
+                    </div>
+                    <div class="presencial-text-area d-flex flex-column p-2">
+                        <p class="subtitle">PRESENCIAL</p>
+                        <p class="title">NA ESCOLA OU ONLINE, O CNA TEM O FORMATO DE CURSO IDEAL PARA VOCÊ</p>
+                        <p class="text">O CNA tem um jeito diferente de ensinar o idioma para alunos de todas as idades. Trabalhamos a comunicação oral e escrita em atividades com temas atuais que mantêm o estudante motivado durante o processo de aprendizagem. É com interação que o aluno aprende o idioma, e não repetindo e memorizando frases. Assim o curso torna-se mais dinâmico, divertido e eficiente.
+                        <br/><br/>
+                        Também desenvolvemos diversos recursos tecnológicos: unimos tecnologia e muita interação para que o aluno tenha ainda mais vontade de aprender. O CNA tem o curso que é do seu jeito e você decide o que faz mais sentido para você.​ É por isso que: com o CNA, o futuro vai no seu flow.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-presential">SAIBA MAIS</a>
+                    </div>
+                </div>
             </div>
-        </a>
-    </header>
-</body>
+        </div>
+
+        <div class="banner-config section-cna-online align-items-center">
+            <div class="container">
+                <div class="control-itens control-itens align-items-center justify-content-center">
+                    <div class="online-text-area d-flex flex-column p-2">
+                        <p class="title">ONLINE</p>
+                        <p class="text">O CNA sempre está ao seu lado durante a jornada de aprendizagem de um novo idioma. Com os formatos de cursos online do CNA, o aluno aprende de uma forma leve por meio de atividades que simulam situações do dia a dia. Desde a primeira aula, você já se comunica na língua que está aprendendo.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-online">SAIBA MAIS</a>
+                    </div>
+                    <div class="area-img">
+                        <img src="./IMAGES/promotion-online-img.png" class="img-banner-online"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-banner-config section-mini-live-class align-items-end">
+            <div class="container">
+                <div class="control-itens control-itens align-items-center justify-content-center">
+                
+                    <iframe width="390" height="230" src="https://www.youtube.com/embed/4CQXNJZFaJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="live-class-text-area d-flex flex-column p-2">
+                        <p class="title">CNA Live Class: aulas online e ao vivo.</p>
+                        <p class="text">O CNA Live Class é uma das melhores soluções de cursos de idiomas online existentes no mercado. É o curso ideal para quem busca um curso online, mas também valoriza estar com seus colegas de classe e seu professor durante o processo de aprendizagem. Você participa de aulas online e ao vivo e ainda pode interagir com os colegas da sua turma para realizar as atividades propostas e praticar a conversação em inglês ou espanhol. Os temas atuais abordados manterão você motivado durante todo o seu processo de aprendizagem. Tudo isso sem sair de casa ou trabalho, com toda comodidade. E depois, você ainda consolida o que aprende no CNA Net, um app com muitos recursos tecnológicos, jogos e interação. Gostou? Experimente já uma aula online e ao vivo grátis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-banner-config section-mini-cnago align-items-center justify-content-center">
+            <div class="border-mini-banner justify-content-center">
+                <div class="container">
+                    <div class="control-itens align-items-center justify-content-center">
+                    <div class="cnago-text-area d-flex flex-column p-2">
+                        <p class="title">CNA GO: DO SEU JEITO, NO SEU TEMPO</p>
+                        <p class="text">O CNA Live Class é uma das melhores soluções de cursos de idiomas online existentes no mercado. É o curso ideal para quem busca um curso online, mas também valoriza estar com seus colegas de classe e seu professor durante o processo de aprendizagem. Você participa de aulas online e ao vivo e ainda pode interagir com os colegas da sua turma para realizar as atividades propostas e praticar a conversação em inglês ou espanhol. Os temas atuais abordados manterão você motivado durante todo o seu processo de aprendizagem. Tudo isso sem sair de casa ou trabalho, com toda comodidade. E depois, você ainda consolida o que aprende no CNA Net, um app com muitos recursos tecnológicos, jogos e interação. Gostou? Experimente já uma aula online e ao vivo grátis!</p>
+                    </div>
+                    <img src="./IMAGES/promotion-go-img.png" class="img-banner-cnago"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-banner-cna-adults align-items-center">
+            <div class="container">
+                <div class="control-itens align-items-center justify-content-center">
+                    <img src="./IMAGES/cna-adults.png" class="img-banner-cna-adults"/>
+                    <div class="adults-text-area d-flex flex-column p-2">
+                        <p class="title">Não importa a idade. Com o jeito CNA, todo mundo aprende</p>
+                        <p class="subtitle">CNA para jovens adultos</p>
+                        <p class="text">Neste mundo de transformações constantes, o CNA sabe o quanto é importante ter um curso de inglês que respeita o seu ritmo, tempo e necessidade. Os cursos de inglês para adultos do CNA trazem metodologia moderna e dinâmica, além de materiais com temas atualizados para manter o aluno motivado dentro e fora da sala de aula. Você conta com uma série de recursos para consolidar o aprendizado, como o portal do aluno, professores online para tirar dúvidas e praticar a conversação, atividades em parceria com instituições internacionais e muito mais.
+            
+                        <br/><br/>
+                        O jeito CNA de ensinar dá resultados. A eficiência é comprovada com os exames internacionais da Cambridge Assessment English, departamento da Universidade de Cambridge, na Inglaterra, e do SIELE para o espanhol. Não perca tempo e venha para o CNA. Com o CNA, o futuro vai no seu flow.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-adults">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-banner-cna-pro align-items-end">
+            <div class="container">
+                <div class="flex-row d-flex">
+                    <div class="d-flex">
+                        <img src="./IMAGES/section-cna-pro-img.png" class="img-banner-pro"/>
+                    </div>
+                    <div class="pro-text-area d-flex flex-column p-2">
+                        <p class="subtitle" style="color: yellow;">CNA PRO</p>
+                        <p class="title">Professional Real-Life Opportunities</p>
+                        <p class="text">O mais novo curso do CNA tem esse nome, pois prepara você para colocar o inglês em prática tanto na vida pessoal quanto na profissional. Com uma abordagem inovadora, inspirada em cursos de pós-graduação, tem o foco na aplicação do conteúdo e não apenas na parte teórica. Foi desenvolvido com base nas necessidades da vida adulta e com o objetivo de preparar você para aplicar o aprendizado em situações reais do seu dia.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-pro">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-banner-config section-mini-teens-on align-items-center">
+            <div class="container">
+                <div class="control-itens align-items-center justify-content-center">
+                    <img src="./IMAGES/cna-teens.png" class="img-banner-teens"/>
+                    <div class="teens-text-area d-flex flex-column p-2">
+                        <p class="title">CNA para pré-adolescentes</p>
+                        <p class="text">O inglês já é parte da sua vida: nas músicas que você ouve, nas viagens que você quer fazer, nos sites e games que você curte. Agora, imagina aprender um novo idioma em uma escola que respeita o seu ritmo e o seu jeito de aprender. Aqui no CNA é assim. A gente vai no seu flow através do Portal do Aluno CNA e dos assuntos mais legais do momento, como games, apps e muito mais. E o mais irado: você aprende de verdade e do seu jeito. No curso de inglês para pré-adolescentes do CNA, você vai aprender com muita tecnologia, dentro e fora da sala de aula. Ah, nós temos um segredinho que queremos compartilhar com você: os nossos professores são um show à parte! Aqui é aquele professor tipo brother, sabe? Comprometido com você e com os seus objetivos no aprendizado do novo idioma.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-adults">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-banner-config section-mini-kids align-items-center">
+            <div class="container">
+                <div class="control-itens align-items-center justify-content-center">
+                    <img src="./IMAGES/cna-kids.png" class="img-banner-kids"/>
+                    <div class="kids-text-area d-flex flex-column p-2">
+                        <p class="title">CNA para pré-adolescentes</p>
+                        <p class="text">Imagina seu filho aprendendo com salas tematizadas e uma linha de materiais didáticos exclusiva com personagens Disney? No CNA aprender é mágico! O CNA é a única escola de idiomas da América Latina a ter essa parceria com a Disney. Esse diferencial motiva as crianças e faz com que elas aprendam de forma natural, lúdica e divertida.
+                        <br/><br/>
+                        Os cursos infantis foram desenvolvidos para ensinar com diversão e eficiência, explorando as principais habilidades das crianças com atividades especialmente criadas para cada faixa etária. Nossos professores são especialmente treinados para instruir as crianças a partir dos 3 anos. Com o CNA, o futuro vai no flow do seu filho.</p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-adults">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-banner-cna-labs align-items-end">
+            <div class="container">
+                <div class="control-itens align-items-center justify-content-center">
+                    <img src="./IMAGES/section-cna-labs-bg.png" class="img-banner-labs"/>
+                    <div class="labs-text-area d-flex flex-column p-2">
+                        <p class="subtitle" style="color: #5BCBF5;">CNA Labs</p>
+                        <p class="title">Todo gênio já foi um minigênio um dia</p>
+                        <p class="text">O CNA Labs é uma experiência extracurricular que desenvolve competências socioemocionais e linguísticas dos alunos por meio de projetos e da colaboração entre crianças de diferentes idades. É como um laboratório da vida real!
+                        <br/><br/>
+                        No CNA LABS, as crianças colocam a mão na massa e criam soluções para problemas reais. Elas aprendem inglês com outras disciplinas, como ciências, tecnologia, artes e matemática, além de exercitar seu lado criativo enquanto desenvolvem habilidades fundamentais para o seu futuro.
+                        <br/><br/>
+                        <b>Seu filho vai brincar, interagir, criar e descobrir novos mundos enquanto desenvolve habilidades fundamentais para o seu futuro.</b></p>
+
+                        <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-labs">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-banner-universo align-items-center">
+            <div class="model-components-unicna col justify-content-center">
+                <div class="container">
+                    <div class="control-itens align-items-center justify-content-center">
+                        <div class="control-universe-itens">
+                            <img src="./IMAGES/cna-universo.png" class="img-banner-universo"/>
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/IwY2FAcneCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="universo-text-area d-flex flex-column p-2">
+                            <p class="subtitle" style="color: #E22347;">CNA UNIVERSO</p>
+                            <p class="title">Com o CNA, o futuro vai no seu flow</p>
+                            <p class="text">O CNA tem um universo de possibilidades para você aprender inglês e espanhol. Aula presencial, online ao vivo e híbrida. Afinal, a gente não está junto só na escola, mas fora dela, como parte do seu dia a dia.
+                            <br/><br/>
+                            Tem cursos inovadores para crianças e adultos, materiais atualizados, Portal do Aluno e aplicativo com atividades extras, caderno de exercícios digital, blog, podcast, e exames internacionais. É um verdadeiro universo de ferramentas, cursos e formatos diferentes de aprender. Para todas as idades, todos os estilos, para todo mundo. Você decide o que faz mais sentido para você e é por isso que: com o CNA, o futuro vai no seu flow.</p>
+    
+                            <a href="#banner-cadastro" class="buttons-cadastro-box" id="btn-adults">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="margin-top: 50px;">
+                    <div class="sec-unicna-control-itens align-items-start justify-content-center">
+                        <div class="universo-text-area align-self-start">
+                            <p class="subtitle">CNA Universo</p>
+                            <p class="title">Com CNA é fácil e prático aprender um novo idioma</p>
+                            <p class="text">Formatos de curso</p>
+                        </div>
+                        <div class="sec-area-img-unicna">
+                            <img src="./IMAGES/format-tips-cna.png"/>
+                            <img src="./IMAGES/format-sistems-cna.png"/>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-banner-eficiencia align-items-center">
+            <div class="container">
+                <p class="title text-center">O CNA TEM A EFICIÊNCIA COMPROVADA</p>
+                <div class="control-itens justify-content-center">
+                    <img src="./IMAGES/siele-img.png" class="img-banner-eficiencia"/>
+                    <p class="text">Ao fim do curso de espanhol para adultos o aluno pode prestar o exame internacional SIELE, que atesta o conhecimento em língua espanhola, sem custo adicional. Esses exames também podem ser oferecidos para alunos de outros níveis, idiomas, colaboradores e também para o público em geral.</p>
+                </div>
+                <div class="control-itens justify-content-center">
+                    <img src="./IMAGES/linguaskill-img.png" class="img-banner-eficiencia"/>
+                    <p class="text">O CNA também oferece para os seus alunos que concluíram o curso a oportunidade de prestar o exame Linguaskill sem custos adicionais. O Linguaskill é um exame da Cambridge, 100% online, rápido e prático, que permite ao candidato verificar as habilidades na língua inglesa de produção oral, escrita, leitura e compreensão auditiva. Após 72 horas da realização do exame, o candidato já recebe o relatório com a nota alcançada. Os resultados estão dentro do Quadro Europeu Comum de Referência para Línguas (CEFR). Ou seja, é um exame que está alinhado ao padrão internacional para a descrição das habilidades linguísticas do aluno. O Linguaskill também pode ser oferecido para alunos de outros níveis e público em geral.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-config section-map-cna align-items-center">
+            <div class="container">
+                <div class="row">
+                    <p class="title text-center">VENHA CONHECER NOSSA UNIDADE</p>
+                    <div style="border-style: dashed; border-color: red; border-radius: 10px; padding: 5px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.3120010912207!2d-48.32672987252988!3d-21.259113974780195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b96b7b37c68ba1%3A0x99e43aab0c273f62!2sCNA%20Escola%20de%20Idiomas%3A%20Curso%20de%20Espanhol%2C%20Curso%20de%20Ingl%C3%AAs%20-%20Jaboticabal%20SP!5e0!3m2!1spt-BR!2sbr!4v1682339739360!5m2!1spt-BR!2sbr" width="100%" height="450" style="border-radius: 10px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-top-page justify-content-start">
+            <div class="container">
+                <a class="d-flex align-items-center" href="#banner-cadastro">
+                    <div class="local-logo-nav justify-content-center align-items-center">
+                    <img src="./IMAGES/cna-removebg-preview.png" alt="CNA Jaboticabal">
+                    </div>
+                    <p class="title">| Jaboticabal</p>
+                </a>
+            </div>
+        </nav>
+
+    </body>
+
 </html>
+    
